@@ -322,8 +322,8 @@ def main(argv=None):
                     *defines,
                     "-D",
                     "smv_current_version={}".format(version_name),
-                    "-c",
-                    confdir_absolute,
+                    # "-c",    # resolves https://github.com/Holzhaus/sphinx-multiversion/issues/69
+                    # confdir_absolute,
                     data["sourcedir"],
                     data["outputdir"],
                     *args.filenames,
